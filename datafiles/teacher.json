@@ -1,0 +1,26 @@
+[
+    {
+        "name": "sandip",
+        "subject": "java",
+        "id": "56",
+        "address": "lalitpur",
+        "email": "sandip@gmail.com",
+        "Phone Number": "9876543210"
+    },
+    {
+        "name": "sujan",
+        "subject": "python",
+        "id": "45",
+        "address": "kathmandu",
+        "email": "sujan10@yahoo.com",
+        "Phone Number": "9876543210"
+    },
+    {
+        "name": "sulav",
+        "subject": "cpp",
+        "id": "78",
+        "address": "banepa",
+        "email": "sulav12@gmail.com",
+        "Phone Number": "9087654321"
+    }
+]
