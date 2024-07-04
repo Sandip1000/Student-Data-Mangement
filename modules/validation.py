@@ -35,8 +35,6 @@ def validate_teacher_id(id):
             return False
     return True  
     
-    
-
 def is_digit(num):
     number="0123456789"
     for char in number:
