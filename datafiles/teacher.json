@@ -22,5 +22,13 @@
         "address": "banepa",
         "email": "sulav12@gmail.com",
         "Phone Number": "9087654321"
+    },
+    {
+        "name": "saman",
+        "subject": "cpp",
+        "id": "32",
+        "address": "bhaktapur",
+        "email": "saman123@gmail.com",
+        "Phone Number": "9067854321"
     }
 ]

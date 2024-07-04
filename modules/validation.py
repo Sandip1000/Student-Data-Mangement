@@ -11,6 +11,7 @@ def validate_string(str):
             if char2==char1:
                 return False
     return True
+
 def validate_email(email):
     if email.count('@')==1:
         temp1,temp2=email.split('@')

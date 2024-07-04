@@ -94,5 +94,21 @@
         },
         "Percent": 45.2,
         "Remarks": "Fail"
+    },
+    {
+        "name": "jack",
+        "Roll Number": "78",
+        "Email": "jack123@gmail.com",
+        "Phone Number": "9087623145",
+        "Address": "kathmandu",
+        "Marks": {
+            "Math": 45,
+            "Science": 67,
+            "Social": 78,
+            "Computer": 90,
+            "Nepali": 54
+        },
+        "Percent": 66.8,
+        "Remarks": "Pass"
     }
 ]

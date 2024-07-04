@@ -1,8 +1,8 @@
 from modules.validation import *
 from modules.filemanagement import *
 
-class Teacher:
-    
+
+class Teacher:  
   def accept(self):
         self.name=input("Enter teacher name: ")
         self.subject=input("Enter Subject: ")

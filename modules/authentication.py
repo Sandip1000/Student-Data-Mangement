@@ -1,5 +1,6 @@
 from modules.filemanagement import read_file
 
+
 def authenticate(name,id):
    teacher_details=read_file("datafiles/teacher.json")
    for i in teacher_details:

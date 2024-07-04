@@ -1,6 +1,7 @@
 from modules.validation import *
 from modules.filemanagement import *
 
+
 class Student:
      def calc_percent(self,marks):
         sum=0
