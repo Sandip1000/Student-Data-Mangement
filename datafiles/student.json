@@ -1,0 +1,98 @@
+[
+    {
+        "name": "shyam",
+        "Roll Number": "12",
+        "Email": "shyam456@gmail.com",
+        "Phone Number": "9087654321",
+        "Address": "kathmandu",
+        "Marks": {
+            "Math": 45,
+            "Science": 67,
+            "Social": 90,
+            "Computer": 87,
+            "Nepali": 67
+        },
+        "Percent": 71.2,
+        "Remarks": "Pass"
+    },
+    {
+        "name": "ram",
+        "Roll Number": "11",
+        "Email": "ram1234@gmail.com",
+        "Phone Number": "98765443210",
+        "Address": "lalitpur",
+        "Marks": {
+            "Math": 45,
+            "Science": 78,
+            "Social": 90,
+            "Computer": 65,
+            "Nepali": 43
+        },
+        "Percent": 64.2,
+        "Remarks": "Pass"
+    },
+    {
+        "name": "sandip",
+        "Roll Number": "34",
+        "Email": "sandip@gmail.com",
+        "Phone Number": "9876504321",
+        "Address": "lalitpur",
+        "Marks": {
+            "Math": 89,
+            "Science": 90,
+            "Social": 76,
+            "Computer": 45,
+            "Nepali": 78
+        },
+        "Percent": 75.6,
+        "Remarks": "Pass"
+    },
+    {
+        "name": "sulav",
+        "Roll Number": "40",
+        "Email": "sulav123@gmail.com",
+        "Phone Number": "9076543210",
+        "Address": "kavre",
+        "Marks": {
+            "Math": 67,
+            "Science": 89,
+            "Social": 90,
+            "Computer": 95,
+            "Nepali": 97
+        },
+        "Percent": 87.6,
+        "Remarks": "Pass"
+    },
+    {
+        "name": "ram",
+        "Roll Number": "64",
+        "Email": "ram546@gmail.com",
+        "Phone Number": "9754321890",
+        "Address": "pokhara",
+        "Marks": {
+            "Math": 67,
+            "Science": 45,
+            "Social": 90,
+            "Computer": 87,
+            "Nepali": 65
+        },
+        "Percent": 70.8,
+        "Remarks": "Pass"
+    },
+    {
+        "name": "hari",
+        "Roll Number": "10",
+        "Email": "hari345@gmail.com",
+        "Phone Number": "9087456321",
+        "Address": "kathmandu",
+        "Marks": {
+            "Math": 90,
+            "Science": 12,
+            "Social": 34,
+            "Computer": 67,
+            "Nepali": 23
+        },
+        "Percent": 45.2,
+        "Remarks": "Fail"
+    }
+]

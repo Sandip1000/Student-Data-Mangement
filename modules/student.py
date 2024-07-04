@@ -80,27 +80,29 @@ class Student:
      @staticmethod
      def search(name):
         student_details=read_file("datafiles/student.json")
-        for i in student_details:
-            if i['name']==name:
-              print(f"Name: {i['name']}")
-              print(f"Roll Number: {i['Roll Number']}")
-              print(f"Email:{i['Email']}")
-              print(f"Phone Number: {i['Phone Number']}")
-              print(f"Address: {i['Address']}")
-              print(f"Marks: {i['Marks']}")
-              print(f"Percent: {i['Percent']}")
-              print(f"Remarks: {i['Remarks']}")
+        for student in student_details:
+            if student['name']==name:
+              print("Student Details:")
+              print(f"Name: {student['name']}")
+              print(f"Roll Number: {student['Roll Number']}")
+              print(f"Email:{student['Email']}")
+              print(f"Phone Number: {student['Phone Number']}")
+              print(f"Address: {student['Address']}")
+              print(f"Marks: {student['Marks']}")
+              print(f"Percent: {student['Percent']}")
+              print(f"Remarks: {student['Remarks']}")
               return True
         return False
      
      @staticmethod
      def delete_student_record(name):
         student_details=read_file("datafiles/student.json")
-        for index,i in student_details(enumerate):
-            if i['name']==name:
+        for index,student in enumerate(student_details):
+            if student['name']==name:
               student_details.pop(index)
-              print(f"Record of {name} has been deleted.")
-              return True
+              write_file("datafiles/student.json",student_details)
+              print(f"Record of {student['name']} has been deleted.")
+              return True      
         return False   
      
      @staticmethod
@@ -121,16 +123,16 @@ class Student:
      @staticmethod
      def rank_calculation():
         student_details=read_file("datafiles/student.json")
-        sorted_students=sorted(student_details.items(),key=lambda x:x['Percent'],reverse=True )
+        sorted_students=sorted(student_details,key=lambda x:x['Percent'],reverse=True )
 
         ranked_student=[]
         current_rank=1
         for i,student in enumerate(sorted_students):
-            if i>0 and student['marks']<sorted_students[i-1]['marks']:
+            if i>0 and student['Percent']<sorted_students[i-1]['Percent']:
               current_rank=current_rank+1
-            ranked_student.append((student['name'], student['marks'], current_rank))
-        for name, marks, rank in ranked_student:
-            print(f"Name: {name}, Marks: {marks}, Rank: {rank}")
+            ranked_student.append((student['name'], student['Percent'], current_rank))
+        for name, percent, rank in ranked_student:
+            print(f"Name: {name}, Percent: {percent}, Rank: {rank}")
         
               
 

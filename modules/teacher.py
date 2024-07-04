@@ -44,3 +44,14 @@ class Teacher:
   def display_all():
         teacher_details=read_file("datafiles/teacher.json")
         print(teacher_details)
+        
+  @staticmethod
+  def delete_teacher_record(name):
+      teacher_details=read_file("datafiles/teacher.json")
+      for index,teacher in teacher_details(enumerate):
+            if teacher['name']==name:
+              teacher_details.pop(index)
+              write_file("datafiles/teacher.json",teacher_details)
+              print(f"Record of {teacher['name']} has been deleted.")
+              return True
+      return False  

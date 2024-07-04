@@ -1,15 +1,18 @@
 from modules import *
 
 def main():
+   while True:
     print("Welcome To Student Management Sytem")
     print("1. Add Student")
-    print
     print("2. Display All Students")
     print("3. Search Student")
-    print("4. Display All Teacher")
-    print("5. D")
-    print("6. Student Rank Calculation")
-    print("8. Exit")
+    print("4. Delete Student Record")
+    print("5. Student Rank Calculation")
+    print("6. Display Highest and Lowest Percentage")
+    print("7. Add Teacher ")
+    print("8. Display All Teachers")
+    print("9. Delete Teacher Record")
+    print("10. Exit")
 
     choice=input("Enter Choice: ")
 
@@ -21,20 +24,35 @@ def main():
     elif choice=='3':
        name=input("Enter name of student: ")
        if Student.search(name)==True:
-          print("Student Details: ")
-          Student.search(name)
+         pass
        else:
-          print("Name not found")
+          print("Name not Found")
     elif choice=='4':
-       Teacher.display_all()
+      name=input("Enter name to delete: ")
+      if Student.delete_student_record(name)==True:
+          pass
+      else:
+         print("Name not Found")
     elif choice=='5':
-       name=input("Enter name of student: ")
-       if Student.delete_student_record(name)==True:
-          Student.delete_student_record
-       else:
-          print("No such name found")
+       Student.rank_calculation()
     elif choice=='6':
-       pass
+       Student.highest_lowest_percent()
+    elif choice=='7':
+       obj3=Teacher()
+       obj3.accept()
+    elif choice=='8':
+       Teacher.display_all()
+    elif choice=='9':
+       name=input("Enter name to delete: ")
+       if Teacher.delete_teacher_record(name)==True:  
+          pass
+       else: 
+          print("Name not found")
+    elif choice=='10':
+       print("Thank You")
+       break
+    else:
+       print("Choice not available")
        
 if read_file("datafiles/teacher.json")==[]:
    count=0
@@ -52,6 +70,7 @@ while True:
       count=0
       if authenticate(name,id)==True:
           main()
+          break
       else:
           count=count+1
           print("Invalid Name and ID.Reenter Name and ID")
